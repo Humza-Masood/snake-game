@@ -1,9 +1,10 @@
 # Snake Game
 
-A PC-based Snake game developed in C++ using object-oriented programming principles. The game implements grid-based movement, collision handling, adjustable speed, score tracking, and structured game-state management.
+A graphical Snake game developed in C++ using raylib and object-oriented programming principles. The game implements grid-based movement, collision handling, adjustable speed, score tracking, and structured game-state management.
 
 ## Features
 
+- Graphical gameplay window using raylib
 - Grid-based snake movement
 - Real-time directional input handling
 - Collision detection for walls, snake body, and game-ending conditions
@@ -15,13 +16,16 @@ A PC-based Snake game developed in C++ using object-oriented programming princip
 ## Tech Stack
 
 - C++
+- raylib
 - Object-Oriented Programming
 - Data Structures
-- Console-based game loop
+- Graphical game loop
 
 ## Project Overview
 
-The project separates the main game logic into multiple components to keep the code organized and easier to modify. Core responsibilities such as player movement, object positioning, food generation, input handling, and game-state updates are handled through separate classes and supporting data structures.
+This project implements the classic Snake game as a graphical desktop application using raylib. The code separates the main game logic into multiple components to keep the project organized and easier to modify.
+
+Core responsibilities such as player movement, object positioning, food generation, input handling, collision detection, and game-state updates are handled through separate classes and supporting data structures.
 
 This design makes the game more modular compared to placing all logic inside one main file.
 
@@ -35,3 +39,10 @@ This design makes the game more modular compared to placing all logic inside one
 | D | Move Right |
 | Q | Quit Game |
 
+## Build Notes
+
+This project uses C++17 and raylib. The included Makefile is configured for macOS with Homebrew-installed raylib.
+
+```bash
+make
+./game
